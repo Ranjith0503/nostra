@@ -9,13 +9,13 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body style="height: 100%; ">
-  <div class="flex justify-center items-center gap-10 bg-black text-slate-100 h-12 cursor-pointer" id="topPart">
+<body style="height:fit-content; ">
+  <div class="flex justify-center items-center gap-10 bg-black text-slate-100 h-12 cursor-pointer transition-all duration-1000" id="topPart">
     <p>Sign up and <span class="font-bold">Get 20% OFF</span> for your first order</p><p class="text-xl" id="topclose">x</p>
 </div>
     <!--navbar-->
- <nav class="flex justify-between m-5 align-middle text-lg">
-    <h3 class="font-bold text-3xl">Nostra</h3>
+ <nav class="flex justify-between px-5  align-middle text-lg sticky top-0 z-30 h-10 bg-white overflow-visible">
+    <a href="index.html"><h3 class="font-bold text-3xl">Nostra</h3></a>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
     class="size-6 lg:hidden cursor-pointer" id="menubar">
     <path stroke-linecap="round" stroke-linejoin="round"
@@ -25,23 +25,23 @@
     <li><a href="index.html">Home</a></li>
     <li class="newarrival">New Arrival</li>
     <li class="mostwanted">Most Wanted</li>
-    <li><a href="collection.html">Collections</a></li>
-    <li><a>Contact Us</a></li>
-  </ul>
+    <li><a href="collection.html" class="contact">Collections</a></li>
+    <li><a href="contact.html" class="contact">Contact Us</a></li>
 </nav>
 
 <!--side nav-->
-<nav id="sidenav" class="fixed z-20 top-0 cursor-pointer transition-all duration-1000" style="width:50%; height:100vh; background-color: black; left:-50%;">
+<nav id="sidenav" class="fixed z-30 top-0 cursor-pointer transition-all duration-1000" style="width:50%; height:100vh; background-color: black; left:-50%;">
   <div>
     <p class="text-cyan-50 flex justify-end mr-10" id="closex">X</p>
   </div>
   <ul id="sidenavList" class="flex flex-col text-slate-50 gap-10 pl-20">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#" class="newarrival">New Arrival</a></li>
-    <li>Most Wanted</li>
+    <li class="newarrival">New Arrival</li>
+    <li class="mostwanted">Most Wanted</li>
     <li><a href="collection.html">Collections</a></li>
-    <li><a>Contact Us</a></li>
+    <li><a href="contact.html" class="contact">Contact Us</a></li>
   </ul>
+</nav>
 </nav>
     <nav class="m-5" id="mostwantedPart">
         <h2 class="text-2xl font-bold mt-10 ml-6">Most Wanted</h2>

@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="height:fit-content; ">
+  <div class="flex justify-center items-center gap-10 bg-black text-slate-100 h-12 cursor-pointer transition-all duration-1000" id="topPart">
+    <p>Sign up and <span class="font-bold">Get 20% OFF</span> for your first order</p><p class="text-xl" id="topclose">x</p>
+</div>
+    <!--navbar-->
+ <nav class="flex justify-between px-5  align-middle text-lg sticky top-0 z-30 h-10 bg-white overflow-visible">
+    <a href="index.html"><h3 class="font-bold text-3xl">Nostra</h3></a>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+    class="size-6 lg:hidden cursor-pointer" id="menubar">
+    <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/>
+</svg>
+  <ul class="hidden lg:flex gap-20">
+    <li><a href="index.html">Home</a></li>
+    <li class="newarrival">New Arrival</li>
+    <li class="mostwanted">Most Wanted</li>
+    <li><a href="collection.html" class="contact">Collections</a></li>
+    <li><a href="contact.html" class="contact">Contact Us</a></li>
+</nav>
+
+<!--side nav-->
+<nav id="sidenav" class="fixed z-30 top-0 cursor-pointer transition-all duration-1000" style="width:50%; height:100vh; background-color: black; left:-50%;">
+  <div>
+    <p class="text-cyan-50 flex justify-end mr-10" id="closex">X</p>
+  </div>
+  <ul id="sidenavList" class="flex flex-col text-slate-50 gap-10 pl-20">
+    <li><a href="index.html">Home</a></li>
+    <li class="newarrival">New Arrival</li>
+    <li class="mostwanted">Most Wanted</li>
+    <li><a href="collection.html">Collections</a></li>
+    <li><a href="contact.html" class="contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div class="p-4 mx-auto max-w-xl bg-white font-[sans-serif]">
+    <h1 class="text-3xl text-gray-800 font-extrabold text-center">Contact us</h1>
+    <form class="mt-8 space-y-4">
+        <input type='text' placeholder='Name'
+            class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+        <input type='email' placeholder='Email'
+            class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+        <input type='text' placeholder='Subject'
+            class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+        <textarea placeholder='Message' rows="6"
+            class="w-full rounded-md px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm pt-3 outline-blue-500"></textarea>
+        <button type='button'
+            class="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full">Send</button>
+    </form>
+</div>
+
+
+
+<div class="bg-black text-white p-5">
+    <h1 style="font-size: 4vw;" class="font-bold">Nostra</h1>
+    <p  style="font-size: 2vw;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest </p>
+    <div class="flex gap-10 m-3">
+      <i class="fa-brands fa-instagram" style="color: #c7cbd1;"></i>
+      <i class="fa-brands fa-twitter" style="color: #eaecf1;"></i>
+      <i class="fa-brands fa-facebook" style="color: #a8aeb4;"></i>
+    </div>
+    <p style="font-size: 2vw;">@ 2023 Nostra.com</p>
+  </div>
+  
+  <script src="script.js"></script>
+  
+  </body>
+  </html>

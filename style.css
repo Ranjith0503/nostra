@@ -1,0 +1,109 @@
+
+  /* Main Slider Container */
+  #slider-container {
+    position: relative;
+    max-width: 100%; /* Adjusts to screen size */
+    margin: auto; /* Center horizontally */
+    overflow: hidden; /* Hide content overflow */
+  }
+
+  /* Slider */
+  #slider {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjusts to content */
+  }
+
+  /* Slides Wrapper */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Individual Slide */
+  .slide {
+    flex-shrink: 0;
+    width: 100%; /* Each image occupies full container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits properly */
+  }
+
+  /* Arrow Buttons */
+  .arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    background-color:transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .arrow.left {
+    left: 30px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+  #shirt{
+    
+    background-color: var(--overlayBlack);
+    --overlayBlack: rgba(105, 69, 69, 0.6);
+    border-radius: var(--10px);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .flex-container {
+    display: flex;
+    overflow-x:auto;
+    gap:1vw;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    width: 100%;
+    border:none;
+    scrollbar-width: none;
+   
+  }
+  
+  .flex-item {
+    width:250px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  } 
+  .newarrival,.mostwanted{
+    cursor: pointer;
+  }
+
+  /* Responsive Adjustments */
+@media (min-width: 600px) and (max-width:770px){
+  .flex-item {
+    width:300px;
+  gap: 0;}
+    
+}
+
+  @media (max-width: 600px) {
+    #slider-container {
+      height: auto;
+    }
+
+    .arrow {
+      font-size: 1.5rem;
+      padding: 8px;
+    }
+    .flex-container {
+      width: 400px; /* Smaller container for smaller screens */
+    }
+    .flex-item {
+      min-width: 80px; /* Smaller items */
+    }
+  }
+   
+
